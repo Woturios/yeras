@@ -2,172 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-  margin-top: 0;
-  margin-right: 0;
-}
-
-.tab {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 10px;
-}
-
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 10px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-  color: #f1f1f1;
-  text-decoration: none;
-}
-
-.tab button:hover{
-  color: blue;
-}
-
-.tab a {
-  padding: 6px 6px 6px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-.tab a:hover {
-  color: #f1f1f1;
-}
-
-.tabcontent {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  padding: 10px 50px 0 50px;
-  width: 650px;
-  float: left;
-}
-
-.topnav {
-    margin-left: 185px;
-    padding: 15px;
-  overflow: hidden;
-  background-color: #e9e9e9;
-}
-
-.clear{
-	clear: both;
-}
-
-.topbar{
-    float: left;
-    font-weight: bold;
-    text-align: center;
-    padding-right: 15px;
-}
-
-.topbar button {
-  font-weight: bold;
-    text-align: center;
-    padding-right: 15px;
-    border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  background-color: inherit;
-  font-size: 15px;
-}
-
-.topbar a {
-  padding: 6px 6px 6px 32px;
-  text-decoration: none;
-}
-
-#logo{
-	padding: 10px;
-	font-size: 48px;
-	font-weight: 900;
-    text-align: center;
-}
-
-.search-container{
-    float: right;
-}
-
-#cdwh{
-    font-size: 0.1%;
-    font-weight: lighter;
-    padding: 0;
-}
-
-.rightBar{
-  height: 100%;
-  width: 300px;
-  position: relative;
-  top: 0;
-  right: 0;
-  margin: 15px;
-  border: 5px solid gray;
-  background-color: lightblue;
-  padding-top: 10px;
-  float: right;
-  text-align: center;
-}
-
-.description{
-  text-align: left;
-  margin: 0 15px;
-}
-
-
-.video_message{
-    font-size: xx-small;
-    width: 560px;
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid darkblue;
-}
-
-button {
-    text-decoration: underline;
-    border: none;
-    color: darkblue;
-    font-weight: bold;
-    background-color: inherit;
-}
-
-button:hover {
-  color: red;
-}
-
-.album{
-  width: 200px;
-  height: 210px;
-  float: left;
-  text-align: center;
-  font-size: x-small;
-  margin: 5px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+<link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
     <div class="tab">
@@ -223,7 +58,7 @@ button:hover {
  </div>
     
     <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9wpgqEYsdiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/9wpgqEYsdiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     
   </div>
@@ -245,7 +80,7 @@ button:hover {
  </div>
     
     <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7gHisR4xmOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/7gHisR4xmOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     
@@ -262,7 +97,7 @@ button:hover {
     </div>
     
     <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jvjj433OAas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/jvjj433OAas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     
@@ -279,7 +114,7 @@ button:hover {
  </div>
     
     <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/D6Pf55CjDos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/D6Pf55CjDos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 
@@ -294,7 +129,7 @@ button:hover {
  </div>
     
     <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c8PoiAKg_9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/c8PoiAKg_9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>    
   </div>
 
