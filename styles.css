@@ -160,9 +160,29 @@ body {
   }
 
 
+  @media screen and (max-width: 1400px){	
+	.tabcontent{
+        width: 400px;
+    }
+    .video{
+        width: 400px;
+    }
+
+    .video_message{
+        width: 400px;
+    }
+
+    .album{
+        margin: auto;
+    }
+}
 
 /*media dla telefonu*/
-@media screen and (max-width: 770px){
+@media screen and (max-width: 1150px){
+    body{
+        margin: 0;
+    }
+
 	.content{
 		width: 100%;
         margin: 0;
@@ -188,7 +208,6 @@ body {
       }
 
       .video{
-        width: 100%;
         margin: 0;
         padding: 0;
 
@@ -196,7 +215,7 @@ body {
 
       .video_message{
         width: 100%;
-        margin: 0;
+        margin: 5px;
         padding: 0;
 
       }
@@ -213,29 +232,27 @@ body {
         float: none;
         margin: 0;
         width: 100%;
-        padding: 0;
+        padding: 10px 0;
 
+      }
+
+      p{
+        margin: 5px;
       }
 
       .responsive-iframe {
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 250px;
       }
 
-}
+      #discography{
+        text-align: center;
+        margin: auto;
+      }
 
+      .album{
+        margin: auto;
+      }
 
-
-@media screen and (max-width: 1400px){	
-	.tabcontent{
-        width: 400px;
-    }
-    .video{
-        width: 400px;
-    }
-
-    .video_message{
-        width: 400px;
-    }
 }
